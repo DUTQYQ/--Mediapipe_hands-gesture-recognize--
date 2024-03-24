@@ -9,9 +9,9 @@ mediapipe可以实时扫描图片并提供**21个关键点**的3d坐标
 ![21](https://github.com/DUTQYQ/-Mediapipe-/blob/main/20210612195704176.png)
 ***
 
-#构造凸包点
 
 ```python
+#构造凸包点
 import numpy as np
 
 list_lms = np.array(list_lms,dtype=np.int32)
@@ -19,7 +19,7 @@ list_lms = np.array(list_lms,dtype=np.int32)
 hull_index = [0,1,2,3,5,10,14,18,17,10]
 
 hull = cv2.convexHull(list_lms[hull_index,:])
-
+```
 
 ### 选取 0,1,2,3,5,10,14,18,17,10 点作为“**凸包点**” （手掌范围）
 
@@ -45,10 +45,10 @@ success, img = cap.read()
                  
                 print("\r%.2f %.2f %.2f %.2f %.2f %.2f "%(hand.landmark[0].z,hand.landmark[4].z,hand.landmark[8].z,hand.landmark[12].z,hand.landmark[16].z,hand.landmark[20].z),end="")
                
-                mpDraw.draw_landmarks(img,hand,mpHands.H  #画点
-```AND_CONNECTIONS)
+                mpDraw.draw_landmarks(img,hand,mpHands.HAND_CONNECTIONS) 画点
+``` 
 
-  #### **对图像进行预处理**
+#### **对图像进行预处理**
 
 ---
 ## **图片分类**
