@@ -6,8 +6,7 @@ Teammennber：丘宇乾，周泽霖
 
 mediapipe可以实时扫描图片并提供**21个关键点**的3d坐标
 
-![21关键点](./C:\Users\qiuyu\Desktop\Gesture\20210612195704176.png)
-
+![21](https://github.com/DUTQYQ/-Mediapipe-/blob/main/20210612195704176.png)
 ***
 
 #构造凸包点
@@ -58,7 +57,7 @@ success, img = cap.read()
 
 #### test文件夹中待检测的图片
 
-![test](./C:\Users\qiuyu\Desktop\Gesture\test.png)
+![test](https://github.com/DUTQYQ/-Mediapipe-/blob/main/test.png)
 
 ```python
 # 获取文件夹中所有图片的路径
@@ -69,7 +68,7 @@ image_paths = [os.path.join(folder_path, img) for img in os.listdir(folder_path)
 
 ---
 
-![test](./C:\Users\qiuyu\Desktop\Gesture\output.png)
+![test](https://github.com/DUTQYQ/-Mediapipe-/blob/main/output.png)
 
 ---
 
@@ -127,11 +126,11 @@ ___
 
 ## 实时：
 
-![test](./C:\Users\qiuyu\Desktop\Gesture\实时效果.png)
+![test](https://github.com/DUTQYQ/-Mediapipe-/blob/main/%E5%AE%9E%E6%97%B6%E6%95%88%E6%9E%9C.png)
 
 ## 图片文件处理
 
-![test](./C:\Users\qiuyu\Desktop\Gesture\output.png)
+![test](https://github.com/DUTQYQ/-Mediapipe-/blob/main/output.png)
 ### 发现前50个图片识别结果为''(空)
 
 #### 原因可能有几个：
